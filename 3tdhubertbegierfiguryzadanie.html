@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tworzenie figur</title>
+</head>
+<body>
+    <style type="text/css">
+        body {
+background-color: skyblue;
+        }
+        form {
+            background-color: blue;
+            border: 2px solid black;
+            width: 25%;
+        }
+    </style>
+    <h1>Zaznacz opcjke</h1>
+    <form id="stak">
+        <label for="shape">ksztalt:</label><br>
+        <input type="checkbox" id="k"  value="k"> kolo
+        <input type="checkbox" id="kw"  value="kw"> kwadrat
+        <input type="checkbox" id="p"  value="p"> Prostokat <br>
+        <label for="size">Wybierz wysokość:</label><br>
+        <input type="number" id="wys"><br>
+        <label for="size">Wybierz szerokość:</label><br>
+        <input type="number" id="sze"><br>
+        <label for="color">Wybierz kolor:</label><br>
+        <input type="color" id="ko" value="#FFFFFF"><br>
+        <button type="button" onclick="glowna()">figura tworzenie</button>
+        <button type="button" onclick="czysc()">wyczysc</button>
+    </form>
+    <h2>dolny napis</h2>
+    <div id="s"></div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
